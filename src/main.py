@@ -314,7 +314,7 @@ async def get_grapes(
         params.append(min_wines)
 
     if sort_by in ["name", "wine_count"]:
-        full_query += f" ORDER BY g.{sort_by} {order}"
+        full_query += f" ORDER BY g.{sort_by} {order}, g.name ASC"
 
     cursor.execute(full_query, tuple(params))
     grapes_data = cursor.fetchall()
