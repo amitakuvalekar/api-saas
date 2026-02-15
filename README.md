@@ -20,3 +20,6 @@ Query parameters: min_wines, variety, region, sort_by, order
 GET /grapes/{grape_name}/wines
 Description: Alternative endpoint using URL-encoded grape name instead of ID.
 Path parameter: grape_name
+
+---
+This is a test to trigger GitHub Actions.
